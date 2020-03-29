@@ -1,0 +1,44 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+canvas {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+  }
+.text-box {
+    font-size: 70px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 31px;
+    word-spacing: 0px;
+    text-transform: uppercase;
+    color:rgb(238, 238, 238);
+  }
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: row;
+  }
+
+.one, .one:active, .one:visited {
+  font-family: 'Courier New', Courier, monospace;
+  font-style:italic;
+  font-size: 40px;
+  display: flex;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 15em;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
