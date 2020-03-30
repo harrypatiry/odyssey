@@ -21,7 +21,7 @@ let scene, camera, renderer, starGeo, stars;
       star.acceleration = 0.02;
       starGeo.vertices.push(star);
     }
-    let sprite = new THREE.TextureLoader().load("../img/circle.png");
+    let sprite = new THREE.TextureLoader().load("../img/star.png");
     let starMaterial = new THREE.PointsMaterial({
       color: 0xaaaaaa,
       size: 0.9,

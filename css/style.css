@@ -30,15 +30,50 @@ canvas {
     flex-direction: row;
   }
 
-.one, .one:active, .one:visited {
+
+
+.one, .one:visited {
+  z-index: 1;
   font-family: 'Courier New', Courier, monospace;
   font-style:italic;
   font-size: 40px;
+  margin: 0;
+  padding-bottom: 15em;
   display: flex;
   text-align: center;
   margin: 0;
-  padding-bottom: 15em;
   position: fixed;
   align-items: center;
   justify-content: center;
+}
+
+.two, .two:visited {
+  z-index: 1;
+  font-family: 'Courier New', Courier, monospace;
+  font-style:italic;
+  font-size: 40px;
+  padding-top: 13em;
+  padding-right: 16em;
+  display: flex;
+  text-align: center;
+  margin: 0;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+
+.three, .three:visited {
+  z-index: 1;
+  font-family: 'Courier New', Courier, monospace;
+  font-style:italic;
+  font-size: 40px;
+  padding-top: 13em;
+  padding-left: 15em;
+  display: flex;
+  text-align: center;
+  margin: 0;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+
 }
