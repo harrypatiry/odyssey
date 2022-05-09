@@ -2,17 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <title>Odyssey</title>
       <link rel="stylesheet" href="css/index.css">
   </head>
-  <body>
-      <canvas id="c"></canvas>
-  
-  </body>
+      <body>
+          <div id="blocker">
+                <div id="instructions">
+                    <p style="font-size:36px; letter-spacing: 10px">
+                        ODYSSEY
+                    </p>
+                    <p>
+                        Click to start<br/>
+                        Move: WASD<br/>
+                        Jump: SPACE<br/>
+                        Look: MOUSE
+                    </p>
+                </div>
+            </div>
+          <canvas id="c"></canvas>
+      </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.module.js" integrity="sha512-tjnAmVGiveGgWkDgt8h8oqmOl3cnmQkTNUIFK2BjMz0SliBCm9l0ecN1fHiOG2mATHSYm/miXNX6tE0/5uYKMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/mtl.js"></script>
-    <script src="js/obj.js"></script>
-  <script type="module" src="js/index.js"></script>
-
+  <script src="js/obj.js"></script>
+  <script type="module" src="./js/main.js"></script>
 </html>
