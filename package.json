@@ -1,0 +1,23 @@
+{
+  "name": "odyssey",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "open http://localhost:3000 && npm run build && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harrypatiry/odyssey.git"
+  },
+  "author": "Harry Patiry",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harrypatiry/odyssey/issues"
+  },
+  "homepage": "https://github.com/harrypatiry/odyssey#readme",
+  "dependencies": {
+    "three": "^0.140.0"
+  }
+}

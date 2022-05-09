@@ -1,3 +1,4 @@
+import * as THREE from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.module.js';
 ( function () {
 
 	const _object_pattern = /^[og]\s*(.+)?/; // mtllib file_reference
@@ -802,7 +803,5 @@
 		}
 
 	}
-
-	THREE.OBJLoader = OBJLoader;
 
 } )();
