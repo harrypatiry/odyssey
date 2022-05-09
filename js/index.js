@@ -21,13 +21,15 @@ const particleCnt = 5000;
 
 const posArray = new Float32Array(particleCnt * 3);
 for(let i = 0; i < particleCnt; i++) {
-    posArray[i] = (Math.random() - 0.5) * (Math.random() * 15);
+    posArray[i] = (Math.random() - 0.5) * (Math.random() * 5);
 }
 particleGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3))
 
 const particleMaterial = new THREE.PointsMaterial({
-    size: 0.02,
+    color: 0xffffff ,
+    size: 0.0045,
     map: circle,
+    transparent: true
 });
 const particle = new THREE.Points(particleGeometry, particleMaterial)
 
