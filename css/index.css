@@ -10,9 +10,6 @@ html, body {
   font-family: Monospace;
 }
 
-.cnvs {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
+.content {
+  position: absolute;
 }
