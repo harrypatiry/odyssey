@@ -10,10 +10,49 @@ html, body {
   font-family: 'Cutive Mono' monospace;
 }
 
-.content {
-  letter-spacing: 5px;
+.navigation {
+  padding: 1em;
   font-weight: 100;
   position: absolute;
   /* top: 50%;
   left: 50%; */
+}
+
+.navigation p {
+  font-size: 42px;
+  letter-spacing: 15px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li a {
+  font-size: 18px;
+  padding-left: 2em;
+  padding-right: 2em;
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  padding-top: .7em;
+  padding-bottom: .7em;
+}
+
+nav ul li a:hover{
+  color: rgb(0, 0, 0);
+  background-color: white;
+}
+
+nav ul ul {
+  display: none;
+}
+
+nav ul li:hover> ul {
+  display: block;
 }
