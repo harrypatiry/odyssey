@@ -7,9 +7,13 @@ html, body {
   margin: 0;
   background-color: black;
   color: #fff;
-  font-family: Monospace;
+  font-family: 'Cutive Mono' monospace;
 }
 
 .content {
+  letter-spacing: 5px;
+  font-weight: 100;
   position: absolute;
+  /* top: 50%;
+  left: 50%; */
 }
