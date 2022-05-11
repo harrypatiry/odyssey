@@ -6,16 +6,17 @@ const loader = new THREE.TextureLoader();
 const circle = loader.load('assets/circle.png')
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-let shield;
 const gltfLoader = new GLTFLoader();
-gltfLoader.load('assets/shield.glb', function(glb) {
-    const shield = glb.scene;
-    if (shield) {
-        shield.rotation.x = 180;
-        shield.rotation.y = -15;
-        shield.rotation.z = 30;
+gltfLoader.load('assets/kepler.glb', function(glb) {
+    const kepler = glb.scene;
+    if (kepler) {
+        kepler.rotation.x = 5;
+        kepler.rotation.y = 3;
+        kepler.rotation.z = .7;
+        kepler.position.set(-1,-1,0)
+        kepler.scale.set(.1,.1,.1)
     }
-    scene.add(shield);
+    scene.add(kepler);
 })
 
 const renderer = new THREE.WebGLRenderer();

@@ -26,33 +26,19 @@ html, body {
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 nav ul {
   list-style: none;
 }
 
-nav ul li a {
-  font-size: 18px;
-  padding-left: 2em;
-  padding-right: 2em;
+nav ul li {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav a {
   text-decoration: none;
-  color: #fff;
-  padding-top: .7em;
-  padding-bottom: .7em;
-}
-
-nav ul li a:hover{
-  color: rgb(0, 0, 0);
-  background-color: white;
-}
-
-nav ul ul {
-  display: none;
-}
-
-nav ul li:hover> ul {
-  display: block;
+  color: white;
 }
