@@ -104,3 +104,11 @@ a, a:visited {
     transform: translateX(0%);
   }
 }
+
+.title {
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  font-size: 22px;
+  letter-spacing: 3px;
+}
