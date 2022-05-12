@@ -5,6 +5,7 @@ import { GLTFLoader } from "https://unpkg.com/three@0.126.1/examples/jsm/loaders
 let urlSelection = window.location.href.toString().split("/").pop();
 let selection = urlSelection.split("#").pop();
 let texture;
+let desc;
 
     switch (selection) {
         case "mars":
@@ -51,7 +52,7 @@ let texture;
             kepler.rotation.x = 5;
             kepler.rotation.y = 3;
             kepler.rotation.z = .7;
-            kepler.position.set(-1,-1,0)
+            kepler.position.set(-1.5,-1,0)
             kepler.scale.set(.1,.1,.1)
         }
         if(!texture) {
