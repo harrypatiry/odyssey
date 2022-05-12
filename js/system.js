@@ -51,7 +51,7 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 
-const sphereGeometry = new THREE.SphereGeometry(1, 32, 32);
+const sphereGeometry = new THREE.SphereGeometry(1.5, 32, 32);
 const sphereMaterial = new THREE.MeshBasicMaterial({ 
     map: earth
 });
