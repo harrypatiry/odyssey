@@ -6,6 +6,7 @@ let urlSelection = window.location.href.toString().split("/").pop();
 let selection = urlSelection.split("#").pop();
 let texture;
 let desc;
+let sunTxt = false;
 
     switch (selection) {
         case "mars":
@@ -34,6 +35,7 @@ let desc;
             break;
         case "sun":
             texture = "assets/sun.jpg";
+            sunTxt = true;
             break;
         case "titan":
             texture = "assets/titan.jpg";
@@ -71,7 +73,7 @@ renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 
 const sphereGeometry = new THREE.SphereGeometry(1.5, 32, 32);
-const sphereMaterial = new THREE.MeshBasicMaterial({ 
+const sphereMaterial = new THREE.MeshStandardMaterial({ 
     map: earth,
     transparent: true
 });
@@ -93,10 +95,16 @@ const particleMaterial = new THREE.PointsMaterial({
     transparent: true
 });
 const particle = new THREE.Points(particleGeometry, particleMaterial)
-const dirLight = new THREE.DirectionalLight(0x404040, 2)
-dirLight.position.set(7, 1, 10);
+const dirLight = new THREE.DirectionalLight(0x404040, 3)
+const ambLight = new THREE.AmbientLight(0x404040 , 3)
+dirLight.position.set(7, 2, 10);
 
-scene.add( sphere, particle, dirLight );
+scene.add( sphere, particle );
+if(sunTxt) {
+    scene.add( ambLight );
+} else {
+    scene.add( dirLight );
+}
 
 new OrbitControls(camera, renderer.domElement)
 camera.position.z = 5;
@@ -111,8 +119,6 @@ function animateParticles(event) {
     mouseX = event.clientX;
 }
 const rld = (event) => {
-    // console.log(event.target.dataset.id);
-    // x = "event.target.dataset.id";
     location.reload();
   };
 const sel = document.querySelector('.nav-links');
