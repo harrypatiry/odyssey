@@ -9,37 +9,37 @@ let desc;
 
     switch (selection) {
         case "mars":
-            texture = "./../assets/mars.jpg";
+            texture = "assets/mars.jpg";
             break;
         case "mercury":
-            texture = "./../assets/mercury.jpg";
+            texture = "assets/mercury.jpg";
             break;
         case "venus":
-            texture = "./../assets/venus.jpg";
+            texture = "assets/venus.jpg";
             break;
         case "jupiter":
-            texture = "./../assets/jupiter.jpg";
+            texture = "assets/jupiter.jpg";
             break;
         case "saturn":
-            texture = "./../assets/saturn.jpg";
+            texture = "assets/saturn.jpg";
             break;
         case "uranus":
-            texture = "./../assets/uranus.jpg";
+            texture = "assets/uranus.jpg";
             break;
         case "neptune":
-            texture = "./../assets/neptune.jpg";
+            texture = "assets/neptune.jpg";
             break;
         case "pluto":
-            texture = "./../assets/pluto.jpg";
+            texture = "assets/pluto.jpg";
             break;
         case "sun":
-            texture = "./../assets/sun.jpg";
+            texture = "assets/sun.jpg";
             break;
         case "titan":
-            texture = "./../assets/titan.jpg";
+            texture = "assets/titan.jpg";
             break;
         case "earth":
-            texture = "./../assets/earth.jpg";
+            texture = "assets/earth.jpg";
             break;
         default:
             texture = "";
