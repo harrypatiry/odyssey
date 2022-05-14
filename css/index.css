@@ -12,8 +12,10 @@ html, body {
 }
 
 .navigation {
+  position: relative;
   padding: 1em;
   font-weight: 100;
+  background-color: transparent;
 }
 
 .navigation p {
@@ -22,6 +24,7 @@ html, body {
 }
 
 nav {
+  background-color: transparent;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -67,6 +70,38 @@ a, a:visited {
   color: inherit;
 }
 
+.title {
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  font-size: 22px;
+  letter-spacing: 3px;
+}
+
+#home, #sun, #mercury, #venus, #earth, #mars, #jupiter, #saturn, #pluto, #titan {
+  display: none;
+}
+
+#home.active, #sun.active, #mercury.active, #earth.active, #titan.active, #saturn.active, #jupiter.active, #pluto.active, #venus.active{
+  display: block;
+}
+
+.content {
+  text-align: center;
+  background-color: transparent;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10%;
+}
+.content-title {
+  font-size: 42px;
+}
+.sub {
+  font-size: 18px;
+}
+
 @media screen and (max-width: 1200px) {
   .nav-links {
     display: flex;
@@ -79,35 +114,44 @@ a, a:visited {
     transform: translateX(100%);
     color: white;
     background-color: rgba(0, 0, 0, 0.651);
-  }
+  }  
   .nav-links li {
     text-align: center;
     width: 100%;
     height: 100%;
-  }
+  }  
   .nav-links li a{
     display: block;
     width: 100%;
     height: 100%;
-  }
+  }  
   .nav-links li:hover {
     background-color: rgba(255, 255, 255, 0.616);
     color: black;
-  }
+  }  
   .mobile-menu {
     display: block;
     font-size: 22px;
     cursor: pointer;
-  }
+  }  
   .nav-active {
     transform: translateX(0%);
-  }
-}
-
-.title {
-  position: absolute;
-  text-align: center;
-  justify-content: center;
-  font-size: 22px;
-  letter-spacing: 3px;
-}
+  }  
+  .content {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 10%;
+    text-align: center;
+    background-color: transparent;
+    z-index: 1;
+  }  
+  .content-title {
+    font-size: 42px;
+  }  
+  .sub {
+    font-size: 18px;
+  }  
+}  

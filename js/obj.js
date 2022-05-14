@@ -4,47 +4,70 @@ import { GLTFLoader } from "https://unpkg.com/three@0.126.1/examples/jsm/loaders
 
 let urlSelection = window.location.href.toString().split("/").pop();
 let selection = urlSelection.split("#").pop();
-let texture;
-let desc;
+let texture, desc;
 let sunTxt = false;
 
     switch (selection) {
         case "mars":
             texture = "assets/mars.jpg";
+            desc = document.getElementById("mars");
+            desc.classList.toggle("active");
             break;
         case "mercury":
             texture = "assets/mercury.jpg";
+            desc = document.getElementById("mercury");
+            desc.classList.toggle("active");
             break;
         case "venus":
             texture = "assets/venus.jpg";
+            desc = document.getElementById("venus");
+            desc.classList.toggle("active");
             break;
         case "jupiter":
             texture = "assets/jupiter.jpg";
+            desc = document.getElementById("jupiter");
+            desc.classList.toggle("active");
             break;
         case "saturn":
             texture = "assets/saturn.jpg";
+            desc = document.getElementById("saturn");
+            desc.classList.toggle("active");
             break;
         case "uranus":
             texture = "assets/uranus.jpg";
+            desc = document.getElementById("uranus");
+            desc.classList.toggle("active");
             break;
         case "neptune":
             texture = "assets/neptune.jpg";
+            desc = document.getElementById("neptune");
+            desc.classList.toggle("active");
             break;
         case "pluto":
             texture = "assets/pluto.jpg";
+            desc = document.getElementById("pluto");
+            desc.classList.toggle("active");
             break;
         case "sun":
             texture = "assets/sun.jpg";
+            desc = document.getElementById("sun");
+            desc.classList.toggle("active");
             sunTxt = true;
             break;
         case "titan":
             texture = "assets/titan.jpg";
+            desc = document.getElementById("titan");
+            desc.classList.toggle("active");
             break;
         case "earth":
             texture = "assets/earth.jpg";
+            desc = document.getElementById("earth");
+            desc.classList.toggle("active");
             break;
         default:
             texture = "";
+            desc = document.getElementById("home");
+            desc.classList.toggle("active");
             break;
     }
     const gltfLoader = new GLTFLoader();
