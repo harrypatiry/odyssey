@@ -96,17 +96,21 @@ a, a:visited {
   top: 10%;
 }
 .content-title {
-  font-size: 42px;
+  font-size: 40px;
+  letter-spacing: 1px;
 }
 .sub {
   font-size: 18px;
 }
 .data {
   position: absolute;
-  top: 17%;
-  left: 0;
-  right: 0;
-  text-align: center;
+  top: 40%;
+  left: 10%;
+  letter-spacing: 1px;
+}
+.data li {
+  list-style: none;
+  padding: .5em;
 }
 
 @media screen and (max-width: 1200px) {
@@ -155,17 +159,14 @@ a, a:visited {
     background-color: transparent;
     z-index: 1;
   }  
-  .content-title {
-    font-size: 42px;
-  }  
-  .sub {
-    font-size: 18px;
-  }  
   .data {
     position: absolute;
     top: 17%;
     left: 0;
     right: 0;
     text-align: center;
+  }
+  .data li {
+    padding: 0;
   }
 }  
